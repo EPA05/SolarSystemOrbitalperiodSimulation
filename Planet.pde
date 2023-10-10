@@ -1,14 +1,13 @@
 class Planet {
   float radius; //Pixel radius of the planet
-  float pixelDistance; // Pixel distance from planet to sun
+  float pixelDistance; //Pixel distance from planet to sun
   color colour; //Colour of the planet
   float distance; //Distance to sun
   float angle; //Radians
   float orbitAngularVelocity; //Radians per day
-  float orbitalPeriod; // Seconds per orbital period
+  float orbitalPeriod; //Seconds per orbital period
   int time; //Time per frame
   static final float G = 6.67e-11; //Gravitational constant. Units: (N*m^2)/kg^2
-
 
   Planet(float r, float pd, float d, color c) {
     radius = r;
@@ -27,9 +26,9 @@ class Planet {
     popMatrix();
   }
 
-  void orbit(Sun sun, float d) {
+  void orbit(Sun sun, float distance) {
     //Calculate the orbital period for the planet
-    orbitalPeriod = TWO_PI*(sqrt(pow(d, 3)/(G*sun.mass)));
+    orbitalPeriod = TWO_PI*(sqrt(pow(distance, 3)/(G*sun.mass)));
 
     time = 60*60*24; // Time per frame is set to one day
 
