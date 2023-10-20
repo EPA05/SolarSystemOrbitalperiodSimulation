@@ -13,13 +13,13 @@ void setup() {
   planets[0] = new Planet(3, 46, 5.79e10, color(112, 128, 144));
   
   //Venus
-  planets[1] = new Planet(3, 52, 1.08e11, color(255,198,73));
+  planets[1] = new Planet(3, 55, 1.08e11, color(255,198,73));
   
   //Earth
-  planets[2] = new Planet(4, 56, 1.50e11, color(0, 0, 255));
+  planets[2] = new Planet(4, 65, 1.50e11, color(0, 0, 255));
   
   //Mars
-  planets[3] = new Planet(3, 65, 2.28e11, color(156, 46, 53));
+  planets[3] = new Planet(3, 75, 2.28e11, color(156, 46, 53));
   
   //Jupiter
   planets[4] = new Planet(30, 126, 7.78e11, color(176, 127, 53));
@@ -33,7 +33,7 @@ void setup() {
   //Neptune
   planets[7] = new Planet(15, 520, 4.5e12, color(142, 195, 195));
   
-  frameRate(24); //Sets framerate to 24fps 
+  frameRate(24); //Sets framerate to 24 FPS
 }
 
 void draw() {

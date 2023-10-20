@@ -11,4 +11,4 @@ class Sun {
     fill(255, 128, 0);
     ellipse(0, 0, radius*2, radius*2);
   }
-}
+} 
